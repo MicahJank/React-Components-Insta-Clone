@@ -13,9 +13,23 @@
 .search-form input {
   text-align: center;
   color: #262626;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
 }
 .image-wrapper {
   height: 50px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4 {
+  border-left: 2px solid black;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 
 .logo-image {
