@@ -2,11 +2,15 @@
 import React from "react";
 import "./SearchBar.css";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment, faHeart, faCompass, faUserCircle } from '@fortawesome/free-regular-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 const SearchBar = () => {
   return (
     <div className="search-bar-wrapper">
       <div className="image-wrapper">
-        <i className="fab fa-instagram" />
+        <FontAwesomeIcon icon={faInstagram} />
       </div>
       <form className="search-form">
         <input
@@ -16,13 +20,13 @@ const SearchBar = () => {
       </form>
       <div className="social-wrapper">
         <div className="social">
-          <i className="far fa-compass" />
+          <FontAwesomeIcon icon={faCompass} />
         </div>
         <div className="social">
-          <i className="far fa-heart" />
+          <FontAwesomeIcon icon={faHeart} />
         </div>
         <div className="social">
-          <i className="far fa-user-circle" />
+          <FontAwesomeIcon icon={faUserCircle} />
         </div>
       </div>
     </div>
